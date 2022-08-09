@@ -1,0 +1,170 @@
+/*
+Full name: Vinh Nhan
+Student ID: 171452212
+Project: WEB222 = Final Assessment 
+Honesty Statement: 
+I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students. 
+*/
+
+
+/* Color: 
+    green #00bfa6
+    darkblue #2f2e41 */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Amiri', serif;
+        width: 90vw;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    header {
+        background-color: #2f2e41;
+        text-align: right;
+    }
+    
+    header h3 {
+        padding: 5px 20px 5px 0;
+    }
+    
+    header h3 a {
+        color: white;
+    }
+    
+    main {
+        margin: 25px 0;
+        overflow: auto;
+    }
+    
+    main nav {
+        float: left;
+        width: 15%;
+        font-size: 1.5em;
+        
+    }
+    
+    .this-page {
+        text-decoration: underline;
+    }
+    
+    nav ul li {
+        list-style: none;
+        margin-bottom: 10px; 
+    }
+    
+    nav ul li a {
+        color: black;
+    }
+    
+    main section {
+        float: left;
+        padding: 0 35px 25px 35px;
+        border-left: 1px solid #2f2e41;
+        border-right: 1px solid #2f2e41;
+        width: 65%;
+    }
+
+    h1 {
+        margin-bottom: 35px;
+        font-size: 2.2em;
+        color: #00bfa6;
+    }
+
+    .container {
+        margin-bottom: 50px;
+        overflow: auto;
+    }
+
+    .container img {
+        width: 150px;
+        float: left;
+        margin-right: 15px;
+    }
+    .container p {
+        float: left;
+        width: calc(100% - 165px);
+    }
+    
+    section h2 {
+        clear: both;
+        padding-bottom: 15px;
+        font-size: 1.7em;
+        color: #2f2e41;
+    }
+    
+    section p {
+        font-size: 1.3em;
+    }
+
+    aside {
+        padding-left: 20px;
+        width: 20%;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    footer {
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+        main nav {
+            float: none;
+            width: 100%;
+        }
+    
+        main nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+    
+        main section {
+            float: none;
+            margin-top: 45px;
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+
+        .container img {
+            width: 100px;
+        }
+
+        .container p {
+            width: calc(100% - 115px);
+        }
+
+        aside {
+            float: none;
+            padding-left: 0;
+            width: 100%;
+        }
+
+        aside img {
+            object-fit: cover;
+        }
+        
+        aside small {
+            display: inline-block;
+        
+        }
+    }
+    
+   

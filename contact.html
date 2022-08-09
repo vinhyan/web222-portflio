@@ -1,0 +1,93 @@
+<!-- 
+Full name: Vinh Nhan
+Student ID: 171452212
+Project: WEB222 = Final Assessment 
+Honesty Statement: 
+I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students. 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinh Nhan | Software Developer</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h3><a href="contact.html">Contact</a></h3>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a class="this-page" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Drop me a message!</h1>
+            <form name="contact" action="https://httpbin.org/post" method="post">
+                <div class="field-wrap">
+                    <label for="fname">Full Name <span class="required">*</span></label>
+                    <div class="input-container">
+                        <input type="text" id="fname" name="fullname" required>
+                    </div>
+                </div>   
+                <div class="field-wrap">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
+                        <small class="email-err"></small>
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="phone">Phone</label>
+                    <div class="input-container">
+                        <input type="tel" id="phone" name="phone" placeholder="(999) 999-9999">
+                        <small class="phone-err"></small>
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="company">Company</label>
+                    <div class="input-container">
+                        <input type="text" id="company" name="company">
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="company">Occupation</label>
+                    <div class="input-container">
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="company">Address</label>
+                    <div class="input-container">
+                        <input type="text" id="address" name="address">
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <div class="input-container">
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="button-wrap">
+                    <input type="submit" id="submit-btn" value="Send">
+                </div>
+            </form>
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        <p>Created by Vinh Nhan - 2022</p>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>
